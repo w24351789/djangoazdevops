@@ -1,7 +1,7 @@
 {% extends 'base.html' %} 
 {% block body %}
 <div class="container mt-5">
-  <h1>文章列表</h1>
+  <h1>Content List</h1>
   <div class="row">
     {% for post in object_list %}
 <div class="col-md-6">
@@ -11,7 +11,7 @@
           <p class="card-text text-muted">
             {{ post.content }}
           </p>
-          <a href="/{{ post.id }}" class="card-link">閱讀更多</a>
+          <a href="/{{ post.id }}" class="card-link">Read More</a>
         </div>
       </div>
     </div>
